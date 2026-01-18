@@ -388,7 +388,10 @@ table {
   font-size: 18px;
   color: #000;
 }
-
+.card.window task-text {
+  font-size: 18px;
+  font-weight: 500;
+}
 .card.window input[type="checkbox"] {
   margin-right: 8px;
 }
