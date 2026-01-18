@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>TO DO List</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+  <main class="main-wrapper">
+    <section class="side-bar">
+
+      <div class="xp-topbar">
+        <div class="xp-user">
+          <img class="xp-avatar" src="images/chess.jpg" alt="User">
+          <div class="xp-username">Prakhar Kapoor</div>
+        </div>
+      </div>
+
+      <div class="xp-body">
+
+        <div class="xp-left">
+          <div class="xp-section-title">Create To-Do</div>
+
+          <div class="field">
+            <label for="todo-title">To-Do Title</label>
+            <input type="text" id="todo-title" placeholder="Enter title">
+          </div>
+
+          <div class="field">
+            <label for="todo-item">To-Do Item</label>
+            <input type="text" id="todo-item" placeholder="Enter task">
+          </div>
+
+          <button class="add-btn">Add Item</button>
+
+          <div class="added-items"></div>
+
+          <button class="save-btn">Save To-Do</button>
+        </div>
+
+        <div class="xp-right">
+          <div class="xp-shortcut">My To-Do Lists</div>
+          <div class="xp-shortcut">Search</div>
+          <div class="xp-shortcut">Help</div>
+          <div class="xp-shortcut">Settings</div>
+        </div>
+
+      </div>
+
+      <div class="xp-bottom">
+        <div class="xp-power">
+          <span class="xp-power-icon"></span>
+          Turn Off
+        </div>
+      </div>
+
+    </section>
+
+    <section class="main-page">
+      <div id="no-results">No To-Do lists found.</div>
+
+      <div class="container">
+        <!-- Cards rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="taskbar-left">
+      <div class="start-logo">
+        <img src="images/windows-start-button-logo.png" alt="Open Sidebar">
+      </div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search" />
+    </div>
+
+    <div class="taskbar-right">
+      <div id="taskbar-clock">00:00</div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
